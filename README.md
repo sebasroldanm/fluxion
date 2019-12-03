@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/sebasroldanm/fluxion/master/logos/logo1.jpg?raw=true" /></p>
+<p align="center"><img src="https://github.com/sebasroldanm/fluxion/blob/master/logos/logo1.jpg?raw=true" /></p>
 
 # Fluxion es el futuro de los ataques MITM WPA
 Fluxion es un remake de linset de vk496 con (con suerte) menos errores y más funcionalidad. Es compatible con la última versión de Kali (rodante). El ataque es principalmente manual, pero las versiones experimentales manejarán automáticamente la mayoría de las funcionalidades de las versiones estables.
