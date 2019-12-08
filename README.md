@@ -25,6 +25,40 @@ La dirección MAC del punto de acceso falso difiere en un octeto del original pa
 ## Instalación
 ``` wget https://raw.githubusercontent.com/sebasroldanm/fluxion/master/install/install.sh && bash install.sh ```
 
+git clone https://github.com/sebasroldanm/fluxion.git
+cd fluxion
+chmod +x install.sh
+./fluxion
+
+(Por lo general faltaran algunos paquetes, se puede seguir el paso a paso)
+
+leafpad /etc/apt/sources.list
+(agregamos los repositorios oficiales desde ttps://www.kali.org/docs/general-use/kali-linux-sources-list-repositories/)
+deb http://http.kali.org/kali kali-rolling main non-free contrib
+
+apt-get update
+
+apt-get install isc-dhcp-server
+
+apt-get install hostapd
+
+apt-get install lighttpd
+
+leafpad /etc/apt/sources.list
+(agregar)
+deb http://old.kali.org/kali sana main non-free contrib
+
+apt-get update
+
+apt-get remove php5 php5-common php5-mysql php5-xmlrpc php5-cgi php5-curl php5-gd php5-cli php5-fpm php-apc php-pear php5-dev php5-imap php5-mcrypt
+
+apt-get install libapache2-mod-php5
+
+apt-get install php5-cgi
+
+./fluxion
+Y con este ultimo comando ejecutamos Fluxion donde todos los requerimientos deben estar OK!
+
 ## Actualizaciones
 Si desea enviar una función, hágalo etiquetando su problema como una "mejora" o envíe un PR. No tengo tiempo suficiente para hacer cambios diarios en fluxion, lo siento.
 
